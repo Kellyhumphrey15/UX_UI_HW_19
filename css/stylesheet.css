@@ -1,0 +1,134 @@
+* {
+  color: white;
+}
+body {
+  background-color: #001d31;
+}
+
+
+.inline-block {
+  background-color: #001d31;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10; 
+  position: relative;
+  outline: 1px solid red;
+ }
+
+.logo-img {
+  width: 20%;
+  height: auto;
+  margin-right: 2%;
+  border-radius: 100%;
+ }
+
+.logo {
+  display: flex;
+  align-items: center;
+ }
+
+.nav-button-sub-container {
+ display: flex;
+ }
+
+.herocontent {
+  padding: 5%;
+  outline: 1px solid red;
+  text-align: center;  
+  background-image: url(https://images.unsplash.com/photo-1559825481-12a05cc00344?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2NlYW58ZW58MHx8MHx8fDA%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 12%;
+} 
+
+
+.Work { 
+ display: flex;
+ flex-direction: column;  
+ text-align: left;
+ padding: 20px;
+ margin: auto; 
+ margin-block-start: 10%;
+ margin-block-end: 10%; 
+ outline: 1px solid red;
+}
+
+.parent {
+  display: grid;
+  margin: 15%;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "mountain mountain2 cococaybeach"
+  "Haitimountain cruiseshipdeck mydog"
+  "mycat cruisingship shipwindow"
+  ;
+  
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+
+
+.notWork {
+  display: flex;
+  flex-direction: column; 
+  text-align: left;
+  padding: 20px;
+  margin: auto;
+  margin-block-start: 10%;
+  margin-block-end: 10%; 
+  outline: 1px solid red;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  outline: 2px solid white;
+  font-size: 24px;
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  height: 40px;
+  width: 30%;
+}
+.footer {
+  outline: 1px solid red;
+  margin-top: 10%;
+  align-items: center; 
+  text-align: center;
+  z-index: 10; 
+  font-size: 24px;
+  background-image: url(https://images.unsplash.com/photo-1559825481-12a05cc00344?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2NlYW58ZW58MHx8MHx8fDA%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 15%;
+}
+
+.get {
+  font-family: fantasy;
+  font-size: larger;
+}
+
+footer ul {
+   outline: 1px solid red;
+   display: flex;
+   justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .parent {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+   "mountain mountain2"
+   "cococaybeach Haitimountain"
+   "cruiseshipdeck mydog"
+   "mycat cruisingship"
+   "shipwindow shipwindow"
+ ;
+  }}
