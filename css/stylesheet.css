@@ -3,9 +3,12 @@
 }
 body {
   background-color: #001d31;
-  font-size: larger;
 }
 
+h1 {
+  font-family: 'Frijole', Times, 'Times New Roman', serif;
+  font-size: 64px;
+}
 
 .inline-block {
   background-color: #001d31;
@@ -30,7 +33,7 @@ body {
  }
 
 .nav-button-sub-container {
- display: flex;
+  display: flex;
  }
 
  li:hover {
@@ -48,11 +51,12 @@ body {
   background-position: 30% 12%;
 } 
 
-
 .Work { 
  display: flex;
  flex-direction: column;  
  text-align: left;
+ font-size: 24px;
+ padding-top: 204px;
  padding: 20px;
  margin: auto; 
  margin-block-start: 5%;
@@ -69,8 +73,8 @@ body {
   "Haitimountain cruiseshipdeck mydog"
   "mycat cruisingship shipwindow"
   ;
-  
 }
+
 img {
   width: 100%;
   height: 100%;
@@ -82,22 +86,36 @@ img {
   display: flex;
   flex-direction: column; 
   text-align: left;
+  font-size: 24px;
   padding: 20px;
   margin: auto;
   margin-block-start: 10%;
   margin-block-end: 10%; 
 }
 
+.btn-container {
+display: flex;
+flex-direction: row;
+background-color: transparent;
+color: white;
+margin: auto;
+}
+
 button {
-  background-color: transparent;
-  color: white;
-  outline: 2px solid white;
-  font-size: 24px;
-  margin: auto;
-  margin-bottom: 10%;
-  margin-top: 5%;
-  height: 40px;
-  width: 30%;
+ background-color: transparent;
+ text-align: center;
+ font-family: Frijole;
+ font-size: 24px;
+ font-weight: 400;
+ margin: auto;
+ margin-bottom: 10%;
+ margin-top: 10%;
+ border-radius: 70px 30px;
+ border: 4px solid #FFF;
+ padding: 15px;
+ width: 217px;
+ margin-left: 35px;
+ line-height: 36px;
 }
 .footer {
   margin-top: 5%;
@@ -123,15 +141,27 @@ footer ul {
 }
 
 .button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: transparent;
-  color: white;
-  outline: 2px solid white;
-  max-width: 150px;
+display: flex;
+flex-direction: column;
+background-color: transparent;
+color: white;
+outline: 2px solid white;
+text-align: center;
+font-family: 'Frijole';
+font-size: 24px;
+font-weight: 400;
+margin: auto;
+margin-bottom: 10%;
+margin-top: 5%;
+height: 40px;
+width: 30%;
+border-radius: 10px;
 }
 
+a {
+  display: grid;
+  justify-content: center;
+}
 
 
 @media only screen and (max-width: 600px) {
