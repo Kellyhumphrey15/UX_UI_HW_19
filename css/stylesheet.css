@@ -165,6 +165,7 @@ margin-right: 5%;
 footer ul {
    display: flex;
    justify-content: space-around;
+   vertical-align: top;
 }
 
 
